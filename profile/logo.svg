@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- quizmill mark: a millstone in the round — the runner stone seen
+       from three-quarters above, its thickness showing, dressed in eight
+       harps, one per brand colour: the logo IS the palette. Each harp's
+       furrow runs off-centre, tangent to the eye, the way a dressed
+       stone's do; the eye is the hole the grain drops through. Mirrors
+       components/Wheel.tsx (literal hexes here: favicons can't read CSS
+       custom properties; the dark scheme is inlined instead). The whole
+       stone is drawn as a circle and squashed by the outer group; the
+       face creeps round inside it wherever the SVG renders live (tab
+       icons mostly stay still — browsers rasterise favicons — but any
+       <img> or direct view turns); the band and the eye stay put. -->
+  <style>
+    .paper { fill: #fffcf4; }
+    .ink { fill: #14110d; }
+    .line { stroke: #14110d; }
+    @media (prefers-color-scheme: dark) {
+      .paper { fill: #100e0b; }
+      .ink { fill: #fff6e3; }
+      .line { stroke: #fff6e3; }
+      .flame { fill: #ff6a3d; } .sun { fill: #ffd233; } .lime { fill: #a3ef2c; } .jade { fill: #1fd396; }
+      .sky { fill: #45bcff; } .blue { fill: #6a80ff; } .violet { fill: #a96bff; } .pink { fill: #ff5ba3; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      #face { transform-origin: 32px 32px; animation: creep 26s linear infinite; }
+      @keyframes creep { to { transform: rotate(360deg); } }
+    }
+  </style>
+  <g transform="translate(0 5.74) scale(1 0.68)">
+    <path class="paper line" d="M 2.5 32 V 45.24 A 29.5 29.5 0 0 0 61.5 45.24 V 32 Z" stroke-width="2.2" stroke-linejoin="round"/>
+    <g id="face" class="line" stroke-linejoin="round">
+    <g transform="translate(32 32) rotate(0)">
+      <path class="flame" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#ff4d1c" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(45)">
+      <path class="sun" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#ffc803" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(90)">
+      <path class="lime" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#8bd90c" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(135)">
+      <path class="jade" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#00b478" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(180)">
+      <path class="sky" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#17a6f5" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(225)">
+      <path class="blue" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#2d4bff" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(270)">
+      <path class="violet" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#8b3dff" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(32 32) rotate(315)">
+      <path class="pink" d="M 8.2 0 L 8.2 28.34 A 29.5 29.5 0 0 1 -14.24 25.84 L 5.8 5.8 A 8.2 8.2 0 0 0 8.2 0 Z" fill="#ff2e88" stroke-width="2.2"/>
+      <path d="M 1.2 10.4 L 1.2 29.48 M -5.8 17.4 L -5.8 28.92" fill="none" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    </g>
+    <circle class="paper line" cx="32" cy="32" r="8.5" stroke-width="2.2"/>
+    <rect class="ink" x="28.8" y="28.8" width="6.4" height="6.4"/>
+  </g>
+</svg>
